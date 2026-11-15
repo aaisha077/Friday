@@ -6,3 +6,5 @@ data/enterprise-attack.json
 data/mlx_ait/
 attack_db/
 model/
+attack_memory_db/
+node_modules/
