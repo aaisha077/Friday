@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+data/ait/
+data/enterprise-attack.json
+data/mlx_ait/
+attack_db/
+model/

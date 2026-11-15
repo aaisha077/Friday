@@ -1,0 +1,335 @@
+[
+ {
+  "label": "service_scan",
+  "scenario": "wilson",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x5; Suricata: Alert - ET SCAN Possible Nmap User-Agent Observed x3; Wazuh: Multiple web server 400 error codes from same source ip. x1",
+  "expected": [
+   "T1046",
+   "T1595"
+  ]
+ },
+ {
+  "label": "service_scan",
+  "scenario": "wheeler",
+  "alert": "host=mail | 5-min window | Suricata: Alert - SURICATA TLS invalid record/traffic x2; Suricata: Alert - SURICATA TLS invalid SSLv2 header x2; Suricata: Alert - SURICATA SMTP no server welcome message x1; Suricata: Alert - SURICATA SMTP invalid reply x1",
+  "expected": [
+   "T1046",
+   "T1595"
+  ]
+ },
+ {
+  "label": "service_scan",
+  "scenario": "fox",
+  "alert": "host=mail | 5-min window | Suricata: Alert - SURICATA TLS invalid SSLv2 header x2; Suricata: Alert - SURICATA TLS invalid record/traffic x2; Suricata: Alert - SURICATA SMTP no server welcome message x1; Suricata: Alert - SURICATA SMTP invalid reply x1",
+  "expected": [
+   "T1046",
+   "T1595"
+  ]
+ },
+ {
+  "label": "service_scan",
+  "scenario": "wilson",
+  "alert": "host=vpn | 5-min window | Suricata: Alert - ET SCAN Possible Nmap User-Agent Observed x12; Suricata: Alert - SURICATA SMTP no server welcome message x1; Suricata: Alert - SURICATA SMTP invalid reply x1; Suricata: Alert - SURICATA HTTP invalid response chunk len x1",
+  "expected": [
+   "T1046",
+   "T1595"
+  ]
+ },
+ {
+  "label": "service_scan",
+  "scenario": "russellmitchell",
+  "alert": "host=mail | 5-min window | Suricata: Alert - SURICATA TLS invalid SSLv2 header x4; Suricata: Alert - SURICATA TLS invalid record/traffic x4; Suricata: Alert - SURICATA SMTP no server welcome message x2; Suricata: Alert - SURICATA SMTP invalid reply x2",
+  "expected": [
+   "T1046",
+   "T1595"
+  ]
+ },
+ {
+  "label": "wpscan",
+  "scenario": "russellmitchell",
+  "alert": "host=intranet_server | 5-min window | AMiner: New request method in Apache Access log. x3169; Wazuh: Web server 400 error code. x2939; Wazuh: Multiple web server 400 error codes from same source ip. x227; AMiner: New event type. x13; AMiner: New status code in Apache Access log. x3; AMiner: New characters in Apache Access request. x2",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "wpscan",
+  "scenario": "wardbeck",
+  "alert": "host=intranet_server | 5-min window | AMiner: New request method in Apache Access log. x741; Wazuh: Web server 400 error code. x676; Wazuh: Multiple web server 400 error codes from same source ip. x52; AMiner: New event type. x10; Wazuh: CMS (WordPress or Joomla) login attempt. x9; Wazuh: Suspicious URL access. x6",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "wpscan",
+  "scenario": "harrison",
+  "alert": "host=intranet_server | 5-min window | AMiner: New request method in Apache Access log. x4814; Wazuh: Web server 400 error code. x4454; Wazuh: Multiple web server 400 error codes from same source ip. x343; AMiner: New event type. x28; AMiner: New status code in Apache Access log. x13; Wazuh: Web server 500 error code (Internal Error). x7",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "wpscan",
+  "scenario": "wilson",
+  "alert": "host=intranet_server | 5-min window | AMiner: New request method in Apache Access log. x12; Wazuh: Web server 400 error code. x10; AMiner: New event type. x3; Wazuh: Multiple web server 400 error codes from same source ip. x1; Wazuh: Apache: Attempt to access forbidden directory index. x1; AMiner: New status code in Apache Access log. x1",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "wpscan",
+  "scenario": "wilson",
+  "alert": "host=intranet_server | 5-min window | AMiner: New request method in Apache Access log. x3171; Wazuh: Web server 400 error code. x2937; Wazuh: Multiple web server 400 error codes from same source ip. x225; AMiner: New event type. x15; Wazuh: CMS (WordPress or Joomla) login attempt. x9; AMiner: New status code in Apache Access log. x7",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "dirb",
+  "scenario": "wardbeck",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x4126; Wazuh: Multiple web server 400 error codes from same source ip. x318; AMiner: New characters in Apache Access request. x27; AMiner: New event type. x23; AMiner: New status code in Apache Access log. x13; Wazuh: Apache: Attempt to access forbidden file or directory. x7",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "dirb",
+  "scenario": "wheeler",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x108519; Wazuh: Multiple web server 400 error codes from same source ip. x8573; AMiner: New characters in Apache Access request. x756; AMiner: New event type. x453; AMiner: New status code in Apache Access log. x248; Wazuh: Apache: Attempt to access forbidden file or directory. x168",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "dirb",
+  "scenario": "fox",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x55865; Wazuh: Multiple web server 400 error codes from same source ip. x4304; AMiner: New characters in Apache Access request. x352; AMiner: New event type. x174; AMiner: New status code in Apache Access log. x92; Wazuh: Apache: Attempt to access forbidden file or directory. x78",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "dirb",
+  "scenario": "santos",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x4127; Wazuh: Multiple web server 400 error codes from same source ip. x317; AMiner: New characters in Apache Access request. x27; AMiner: New event type. x23; AMiner: New status code in Apache Access log. x13; Wazuh: Apache: Attempt to access forbidden file or directory. x7",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "dirb",
+  "scenario": "harrison",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Web server 400 error code. x4612; Wazuh: Multiple web server 400 error codes from same source ip. x355; AMiner: New characters in Apache Access request. x53; AMiner: New event type. x31; AMiner: New status code in Apache Access log. x20; Wazuh: Apache: Attempt to access forbidden file or directory. x13",
+  "expected": [
+   "T1595"
+  ]
+ },
+ {
+  "label": "online_cracking",
+  "scenario": "fox",
+  "alert": "host=intranet_server | 5-min window | Suricata: Alert - SURICATA HTTP unable to match response to request x1",
+  "expected": [
+   "T1110"
+  ]
+ },
+ {
+  "label": "online_cracking",
+  "scenario": "santos",
+  "alert": "host=intranet_server | 5-min window | Suricata: Alert - SURICATA HTTP unable to match response to request x2",
+  "expected": [
+   "T1110"
+  ]
+ },
+ {
+  "label": "attacker_change_user",
+  "scenario": "russellmitchell",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x3; Wazuh: User successfully changed UID. x1; Wazuh: PAM: Login session opened. x1; AMiner: New user_auth parameter combination in Audit logs. x1; AMiner: New user_acct parameter combination in Audit logs. x1; AMiner: New cred_acq parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548",
+   "T1078"
+  ]
+ },
+ {
+  "label": "attacker_change_user",
+  "scenario": "harrison",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x5; Wazuh: PAM: Login session opened. x2; AMiner: New user_acct parameter combination in Audit logs. x2; AMiner: New cred_acq parameter combination in Audit logs. x2; AMiner: New user_start parameter combination in Audit logs. x2; Wazuh: User successfully changed UID. x1",
+  "expected": [
+   "T1548",
+   "T1078"
+  ]
+ },
+ {
+  "label": "attacker_change_user",
+  "scenario": "wheeler",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x3; Wazuh: PAM: Login session opened. x1; Wazuh: User successfully changed UID. x1; AMiner: New user_auth parameter combination in Audit logs. x1; AMiner: New user_acct parameter combination in Audit logs. x1; AMiner: New cred_acq parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548",
+   "T1078"
+  ]
+ },
+ {
+  "label": "attacker_change_user",
+  "scenario": "fox",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x3; Wazuh: PAM: Login session opened. x2; Wazuh: User successfully changed UID. x1; AMiner: New user_auth parameter combination in Audit logs. x1; AMiner: New user_acct parameter combination in Audit logs. x1; AMiner: New cred_acq parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548",
+   "T1078"
+  ]
+ },
+ {
+  "label": "attacker_change_user",
+  "scenario": "wilson",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x3; Wazuh: PAM: Login session opened. x2; AMiner: New cred_acq parameter combination in Audit logs. x2; Wazuh: User successfully changed UID. x1; AMiner: New user_auth parameter combination in Audit logs. x1; AMiner: New user_acct parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548",
+   "T1078"
+  ]
+ },
+ {
+  "label": "escalated_sudo_command",
+  "scenario": "wilson",
+  "alert": "host=intranet_server | 5-min window | Wazuh: PAM: Login session opened. x2; Wazuh: PAM: Login session closed. x2; Wazuh: Successful sudo to ROOT executed. x2; Wazuh: First time user executed sudo. x1; AMiner: New syscall parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548"
+  ]
+ },
+ {
+  "label": "escalated_sudo_command",
+  "scenario": "harrison",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x16; Wazuh: PAM: Login session opened. x3; Wazuh: PAM: Login session closed. x3; Wazuh: Successful sudo to ROOT executed. x3; AMiner: New user_cmd parameter combination in Audit logs. x3; AMiner: New cred_refr parameter combination in Audit logs. x3",
+  "expected": [
+   "T1548"
+  ]
+ },
+ {
+  "label": "escalated_sudo_command",
+  "scenario": "santos",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x11; Wazuh: Successful sudo to ROOT executed. x2; Wazuh: PAM: Login session opened. x2; Wazuh: PAM: Login session closed. x2; AMiner: New user_cmd parameter combination in Audit logs. x2; AMiner: New cred_refr parameter combination in Audit logs. x2",
+  "expected": [
+   "T1548"
+  ]
+ },
+ {
+  "label": "escalated_sudo_command",
+  "scenario": "russellmitchell",
+  "alert": "host=intranet_server | 5-min window | AMiner: New event type. x6; Wazuh: Successful sudo to ROOT executed. x2; Wazuh: PAM: Login session opened. x1; Wazuh: PAM: Login session closed. x1; AMiner: New user_cmd parameter combination in Audit logs. x1; AMiner: New cred_refr parameter combination in Audit logs. x1",
+  "expected": [
+   "T1548"
+  ]
+ },
+ {
+  "label": "escalated_sudo_command",
+  "scenario": "fox",
+  "alert": "host=intranet_server | 5-min window | Wazuh: Successful sudo to ROOT executed. x3; Wazuh: PAM: Login session opened. x2; Wazuh: PAM: Login session closed. x2",
+  "expected": [
+   "T1548"
+  ]
+ },
+ {
+  "label": "dnsteal",
+  "scenario": "harrison",
+  "alert": "host=internal_share | 5-min window | Suricata: Alert - ET INFO Observed DNS Query to .biz TLD x21",
+  "expected": [
+   "T1048",
+   "T1071.004"
+  ]
+ },
+ {
+  "label": "dnsteal",
+  "scenario": "harrison",
+  "alert": "host=internal_share | 5-min window | Suricata: Alert - ET INFO Observed DNS Query to .biz TLD x15",
+  "expected": [
+   "T1048",
+   "T1071.004"
+  ]
+ },
+ {
+  "label": "dnsteal",
+  "scenario": "fox",
+  "alert": "host=inet-firewall | 5-min window | AMiner: Unusual occurrence frequencies of query records in DNS logs. x1",
+  "expected": [
+   "T1048",
+   "T1071.004"
+  ]
+ },
+ {
+  "label": "dnsteal",
+  "scenario": "santos",
+  "alert": "host=inet-firewall | 5-min window | Suricata: Alert - ET INFO Observed DNS Query to .biz TLD x4",
+  "expected": [
+   "T1048",
+   "T1071.004"
+  ]
+ },
+ {
+  "label": "dnsteal",
+  "scenario": "harrison",
+  "alert": "host=internal_share | 5-min window | Suricata: Alert - ET INFO Observed DNS Query to .biz TLD x18",
+  "expected": [
+   "T1048",
+   "T1071.004"
+  ]
+ },
+ {
+  "label": "webshell_cmd",
+  "scenario": "fox",
+  "alert": "host=intranet_server | 5-min window | AMiner: High entropy in Apache Access request. x3",
+  "expected": [
+   "T1505.003",
+   "T1059"
+  ]
+ },
+ {
+  "label": "webshell_cmd",
+  "scenario": "shaw",
+  "alert": "host=intranet_server | 5-min window | AMiner: High entropy in Apache Access request. x2",
+  "expected": [
+   "T1505.003",
+   "T1059"
+  ]
+ },
+ {
+  "label": "webshell_cmd",
+  "scenario": "shaw",
+  "alert": "host=intranet_server | 5-min window | AMiner: High entropy in Apache Access request. x1",
+  "expected": [
+   "T1505.003",
+   "T1059"
+  ]
+ },
+ {
+  "label": "webshell_cmd",
+  "scenario": "santos",
+  "alert": "host=intranet_server | 5-min window | AMiner: High entropy in Apache Access request. x3; AMiner: Unusual occurrence frequencies of Apache Access request methods. x1",
+  "expected": [
+   "T1505.003",
+   "T1059"
+  ]
+ },
+ {
+  "label": "crack_passwords",
+  "scenario": "fox",
+  "alert": "host=monitoring | 5-min window | AMiner: CPU value deviates from average in monitoring logs. x1",
+  "expected": [
+   "T1110"
+  ]
+ },
+ {
+  "label": "crack_passwords",
+  "scenario": "harrison",
+  "alert": "host=monitoring | 5-min window | AMiner: CPU value out of expected range in monitoring logs. x1",
+  "expected": [
+   "T1110"
+  ]
+ },
+ {
+  "label": "dns_scan",
+  "scenario": "shaw",
+  "alert": "host=inet-firewall | 5-min window | AMiner: New characters in DNS domain. x9",
+  "expected": [
+   "T1046",
+   "T1595",
+   "T1590"
+  ]
+ }
+]
