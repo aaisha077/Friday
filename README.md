@@ -135,23 +135,6 @@ Defenses (`explain(alert, defended=True)`): 1) flag and redact instruction-like 
 
 The filter beats every payload that *gives orders*. It does not stop a payload that just *tells a believable story*: no commands, nothing to redact, and the model believes it. That is the honest limit of keyword and prompt defenses, and the next fix is a rule that log text can never lower severity by itself.
 
-## Roadmap
-
-- [x] Fine-tuned triage model (LoRA, MLX, Apple Silicon)
-- [x] FastAPI service + React dashboard
-- [x] Multi-agent red-teaming system (attacker, target, judge, strategist) with LangGraph + RAG attack memory
-- [x] Baselines: majority class, TF-IDF
-- [x] Zero-shot LLM baseline
-- [x] Evaluation on real unseen attacks (AIT-ADS)
-- [x] ATT&CK RAG agent with query rewriting + hybrid retrieval (0% → 46% technique accuracy)
-- [x] LangGraph pipeline: incidents → ATT&CK investigation → report (also single-alert triage path)
-- [x] Alert correlation into incidents (2.66M alerts → 1,217 incidents, 86–99% of attack alerts kept)
-- [x] Severity-ranked incident queue (real break-in moved from #7 to #2)
-- [x] Red-team FRIDAY via log-field prompt injection (45% attack success)
-- [x] Defenses (sanitization, spotlighting, severity floor) + re-test (45% → 16%)
-- [x] Hands-free voice: always listening for "Friday" (mlx-whisper on-device), speaks first on high/critical, neural voice
-- [x] Live dashboard (incident queue, replay, live injection box, voice orb)
-- [ ] Demo video
 
 ## Run it
 
